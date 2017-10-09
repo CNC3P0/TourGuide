@@ -23,8 +23,7 @@ public class ListFragment extends Fragment {
                              Bundle savedInstanceState) {
 // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.list_fragment, container, false);
-// get the reference of Button
-        listButton = (Button) view.findViewById(R.id.listButton);
+
 // perform setOnClickListener on first Button
         listButton.setOnClickListener(new View.OnClickListener() {
             @Override

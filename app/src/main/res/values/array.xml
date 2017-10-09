@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_content">
+        <item>Red Collar Brewing Co.</item>
+        <item>The Noble Pig</item>
+        <item>Iron Road Brewing</item>
+        <item>Kamloops Brewing Co.</item>
+    </string-array>
+</resources>
