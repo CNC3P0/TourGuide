@@ -6,4 +6,10 @@
         <item>Iron Road Brewing</item>
         <item>Kamloops Brewing Co.</item>
     </string-array>
+    <string-array name="blurbs">
+        <item>Rustic beerhall.</item>
+        <item>Good food.</item>
+        <item>Close to TRU.</item>
+        <item>Just a brewery.</item>
+    </string-array>
 </resources>
