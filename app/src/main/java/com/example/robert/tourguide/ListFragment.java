@@ -14,9 +14,7 @@ import android.widget.Toast;
 
 public class ListFragment extends Fragment {
 
-
     View view;
-    Button listButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -24,14 +22,6 @@ public class ListFragment extends Fragment {
 // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.list_fragment, container, false);
 
-// perform setOnClickListener on first Button
-        listButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-// display a message by using a Toast
-                Toast.makeText(getActivity(), "List Fragment", Toast.LENGTH_LONG).show();
-            }
-        });
         return view;
     }
 }

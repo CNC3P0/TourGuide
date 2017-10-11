@@ -23,16 +23,7 @@ public class BlankFragment extends Fragment {
                              Bundle savedInstanceState) {
 // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.blank_fragment, container, false);
-// get the reference of Button
-        blankButton = (Button) view.findViewById(R.id.blankButton);
-// perform setOnClickListener on second Button
-        blankButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-// display a message by using a Toast
-                Toast.makeText(getActivity(), "Blank Fragment", Toast.LENGTH_LONG).show();
-            }
-        });
+
         return view;
     }
 }
