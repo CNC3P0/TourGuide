@@ -20,10 +20,15 @@ public class BlankFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        BlankFragment activity = (BlankFragment) getActivity();
+        //BlankFragment activity = (BlankFragment) getActivity();
 
-        String blurb;
-        blurb = activity.getIntent().getExtras().getString("message");
+        //String blurb;
+
+        //Bundle bundle = this.getArguments();
+        //blurb = bundle.getString("blurbkey", "No blurb found!");
+
+        //blurb = activity.getIntent().getExtras().getString("message");
+
 // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.blank_fragment, container, false);
 
