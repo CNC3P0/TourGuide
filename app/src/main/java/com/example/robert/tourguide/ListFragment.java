@@ -6,7 +6,6 @@ package com.example.robert.tourguide;
 
 import android.app.Fragment;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -34,22 +33,16 @@ public class ListFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Log.v("potato", "selected item is: " + blurbItems[i]);
-                handleSelection(blurbItems[i]);
+
+                //handleSelection(blurbItems[i]);
             }
         });
         return view;
     }
 
     public void handleSelection(String i) {
-        //Intent intent = new Intent(getActivity(), BlankFragment.class);
-        //intent.putExtra("message", blurbItems[i]);
-        //startActivity(intent);
-
-        Fragment fragment = new Fragment();
-        Bundle bundle = new Bundle();
-        bundle.putString("blurbkey", i);
-        fragment.setArguments(bundle);
+        Intent intent = new Intent(getActivity().getBaseContext(), BlankFragment.class);
+        intent.putExtra("message", i);
+        startActivity(intent);
     }
-
-
 }
